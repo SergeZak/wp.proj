@@ -98,3 +98,17 @@ article.post:last-of-type{
 article.page h2{
     font-size: 300%;
 }
+
+div.title-column{
+    float: left;
+    width: 30%;
+}
+
+div.text-column{
+    float: right;
+    width: 70%;
+}
+
+div.column-container{
+    overflow: hidden;
+}

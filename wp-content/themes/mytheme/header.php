@@ -15,6 +15,10 @@
         <h1><a href="<?php echo home_url() ?>"><?php bloginfo('name')?></a></h1>
         <h5><?php bloginfo('description')?></h5>
 
+        <?php if(is_page('portfolio')){ ?>
+            <h5>This text will be shown only on /portfolio page</h5>
+        <?php } ?>
+
         <nav class="site-nav">
             <?php
             $args = ['theme_location'=>'primary'];
