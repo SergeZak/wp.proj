@@ -32,3 +32,11 @@ div.container{
     border-top: 2px solid #999;
     margin-top: 30px;
 }
+
+article.post{
+    border-bottom: 2px dotted #bbbbbb;
+}
+
+article.post:last-of-type{
+    border-bottom: none;
+}
