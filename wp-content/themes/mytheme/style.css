@@ -94,3 +94,7 @@ article.post:last-of-type{
 .site-footer nav ul li:last-child{
     border-right: none;
 }
+
+article.page h2{
+    font-size: 300%;
+}
