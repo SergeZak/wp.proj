@@ -29,3 +29,16 @@ function has_children(){
     $pages = get_pages('child_of='.$post->ID);
     return count($pages);
 }
+
+//Print categories that belongs to post
+function print_categories(){
+    $categories = get_the_category();
+    $separator = ", ";
+    $output = '';
+    if(!empty($categories)){
+        foreach ($categories as $category) {
+            $output .=  '<a href="'. get_category_link($category->term_id) .'">'. $category->cat_name . '</a>' . $separator;
+        }
+    }
+    echo trim($output, ', ');
+}
