@@ -80,7 +80,9 @@ article.post:last-of-type{
 }
 
 .site-header nav ul li.current-menu-item a:link,
-.site-header nav ul li.current-menu-item a:visited{
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited{
     background: #006ec3;
     color: #ffffff;
 }
@@ -127,4 +129,39 @@ div.info-box h4{
 
 div.info-box p{
     font-size: 65%;
+}
+
+.children-links{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 80%;
+}
+
+.children-links a:link,
+.children-links a:visited{
+    text-decoration: none;
+}
+
+.children-links li {
+    margin-right: 20px;
+}
+
+.children-links .parent-link{
+    float: left;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited{
+    color: #333;
+}
+
+.children-links .current_page_item a{
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    cursor: default;
 }
