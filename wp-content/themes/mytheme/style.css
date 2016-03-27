@@ -165,3 +165,17 @@ div.info-box p{
     color: #333;
     cursor: default;
 }
+
+.post h2{
+    margin-bottom: 0;
+}
+
+p.post-info{
+    font-size: 87%;
+    color: #999;
+    margin-top: 5px;
+}
+
+p.post-info a{
+    color: #999;
+}
