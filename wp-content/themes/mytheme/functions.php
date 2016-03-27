@@ -6,6 +6,8 @@ function site_resources(){
 
 add_action('wp_enqueue_scripts', 'site_resources');
 
+add_filter('excerpt_length', 'custom_excerpt_length');
+
 // Nav menus
 register_nav_menus([
     'primary'=>__('Primary Menu'),
@@ -41,4 +43,33 @@ function print_categories(){
         }
     }
     echo trim($output, ', ');
+}
+
+//Get specific title for archive page
+function get_specific_archive_title(){
+        if(is_category()){
+            single_cat_title();
+        }
+        elseif(is_tag()){
+            single_tag_title();
+        }
+        elseif(is_author()){
+            the_post();
+            echo "Author Archives: ".get_the_author();
+            rewind_posts();
+        }
+        elseif(is_day()){
+            echo 'Daily Archives: ' .get_the_date() ;
+        }
+        elseif(is_month()){
+            echo 'Monthly Archive: ' .get_the_date('F Y');
+        }
+        else{
+            echo "Archives: ";
+        }
+}
+
+//Customize excerpt word count link
+function custom_excerpt_length(){
+    return 25;
 }

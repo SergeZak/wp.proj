@@ -2,11 +2,7 @@
 
 get_header();
 
-if(have_posts()){ ?>
-
-    <h2><?php get_specific_archive_title() ?></h2>
-
-    <?php
+if(have_posts()){
     while(have_posts()){
         the_post(); ?>
         <article class="post">
@@ -15,10 +11,10 @@ if(have_posts()){ ?>
             <p class="post-info">
                 <?php the_time('F jS, Y g:i a') ?> |
                 <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" ><?php the_author() ?></a> |
-                posted in <?php print_categories() ?>
+                posted in posted in <?php print_categories() ?>
             </p>
 
-            <?php the_excerpt() ?>
+            <?php the_content('Continue reading &raquo;') ?>
         </article>
     <?php }
 }
