@@ -112,3 +112,19 @@ div.text-column{
 div.column-container{
     overflow: hidden;
 }
+
+div.info-box{
+    width: 30%;
+    float: right;
+    margin: 0 0 30px 30px;
+    padding:20px;
+    background-color: #EEEEEE;
+}
+
+div.info-box h4{
+    margin-bottom: 6px;
+}
+
+div.info-box p{
+    font-size: 65%;
+}
