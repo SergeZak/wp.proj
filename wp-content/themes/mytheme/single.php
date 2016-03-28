@@ -14,6 +14,8 @@ if(have_posts()){
                 posted in posted in <?php print_categories() ?>
             </p>
 
+            <?php the_post_thumbnail('banner-image') ?>
+
             <?php the_content('Continue reading &raquo;') ?>
         </article>
     <?php }

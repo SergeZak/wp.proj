@@ -5,14 +5,24 @@ function site_resources(){
 }
 
 add_action('wp_enqueue_scripts', 'site_resources');
+add_action('after_setup_theme', 'custom_theme_setup');
 
 add_filter('excerpt_length', 'custom_excerpt_length');
 
-// Nav menus
-register_nav_menus([
-    'primary'=>__('Primary Menu'),
-    'footer'=>__('Footer Menu')
-]);
+// Theme setups
+function custom_theme_setup(){
+
+    // Nav menus
+    register_nav_menus([
+        'primary'=>__('Primary Menu'),
+        'footer'=>__('Footer Menu')
+    ]);
+
+    //Add featured image support
+    add_theme_support('post-thumbnails');
+    add_image_size('small-thumbnail', 180,120, true);
+    add_image_size('banner-image', 920,210, ['center', 'top']);
+}
 
 // Get top ancestor
 function get_top_ancestor_id(){
