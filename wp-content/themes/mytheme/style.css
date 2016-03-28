@@ -193,3 +193,25 @@ img{
     position: absolute;
     left: 0;
 }
+
+.hd-search{
+    float: right;
+}
+
+.hd-search label{
+    display: none;
+}
+
+.hd-search #searchsubmit{
+    background: #006ec3;
+    color: #FFFFFF;
+    padding: 5px 14px;
+    border: none;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.hd-search #s{
+    vertical-align: top;
+    padding: 3px;
+}
