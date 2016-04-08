@@ -22,9 +22,14 @@ function custom_theme_setup(){
     add_theme_support('post-thumbnails');
     add_image_size('small-thumbnail', 180,120, true);
     add_image_size('banner-image', 920,210, ['center', 'top']);
+
+    //Add post format support
+    add_theme_support('post-formats', ['aside', 'gallery', 'link']);
 }
 
 // Get top ancestor
+// if we're viewing the parent page, function return its id,
+// if we're viewing the child page, function returns the id of it's parent page
 function get_top_ancestor_id(){
     global $post;
     if($post->post_parent){

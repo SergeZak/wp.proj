@@ -215,3 +215,34 @@ img{
     vertical-align: top;
     padding: 3px;
 }
+
+article.post-aside{
+    margin: 20px 0;
+    font-size:125%;
+    background: #fff5cb;
+    padding:20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+article.post-aside p{
+    line-height: 1em;
+    margin: 0;
+}
+
+article.post-aside p.mini-meta{
+    font-size: 68%;
+    margin-bottom: 15px;
+    color: #777;
+}
+
+
+
+
+
+
+
+
+
