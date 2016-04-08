@@ -239,6 +239,10 @@ article.post-aside p.mini-meta{
     color: #777;
 }
 
+.post{
+    margin-top: 20px;
+}
+
 article.post-link{
     padding: 0;
     background: #E0EBFF;
@@ -250,7 +254,19 @@ article.post-link a{
 
 }
 
+article.post-gallery{
+    background: #222;
+    color: #FFFFFF;
+    padding: 20px;
+}
 
+article.post-gallery img{
+    border: none !important;
+}
+
+article.post-gallery h2{
+    text-align: center;
+}
 
 
 
