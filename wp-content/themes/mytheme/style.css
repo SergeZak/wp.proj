@@ -216,7 +216,8 @@ img{
     padding: 3px;
 }
 
-article.post-aside{
+article.post-aside,
+article.post-link{
     margin: 20px 0;
     font-size:125%;
     background: #fff5cb;
@@ -238,6 +239,16 @@ article.post-aside p.mini-meta{
     color: #777;
 }
 
+article.post-link{
+    padding: 0;
+    background: #E0EBFF;
+}
+
+article.post-link a{
+    display: block;
+    padding: 20px;
+
+}
 
 
 
