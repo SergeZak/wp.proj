@@ -268,6 +268,27 @@ article.post-gallery h2{
     text-align: center;
 }
 
+.main-column{
+    width: 66%;
+    float:left;
+}
+
+.secondary-column{
+    width: 30%;
+    float: right;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.footer-widget_area{
+    width: 24%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
 
 
 

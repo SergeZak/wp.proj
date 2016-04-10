@@ -88,3 +88,33 @@ function get_specific_archive_title(){
 function custom_excerpt_length(){
     return 25;
 }
+
+//Add Widget Locations
+function customWidgetInit(){
+    register_sidebar([
+        'name' => 'Sidebar',    //human-friendly name of the widget, that will be displayed in admin area
+        'id' => 'sidebar1',     //registered id of the widget
+        'before_widget' => '<div class="widget-item">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="my-h-class">',
+        'after_title' => '</h4>'
+    ]);
+    register_sidebar([
+        'name' => 'Footer Area 1',
+        'id' => 'footer1',
+    ]);
+    register_sidebar([
+        'name' => 'Footer Area 2',
+        'id' => 'footer2',
+    ]);
+    register_sidebar([
+        'name' => 'Footer Area 3',
+        'id' => 'footer3',
+    ]);
+    register_sidebar([
+        'name' => 'Footer Area 4',
+        'id' => 'footer4',
+    ]);
+}
+
+add_action('widgets_init', 'customWidgetInit');
